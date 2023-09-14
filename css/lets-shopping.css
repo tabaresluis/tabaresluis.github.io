@@ -1,0 +1,336 @@
+:root{
+    --bg-color: white;
+    --bt-color: #898AA6;
+    --bd-color: #C9BBCF;
+    --bg2-color: #D6EFED;
+    --bt2-color: #B7D3DF;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.lista-compra:empty::before{
+    display: flex;
+    width: 47vw;
+    height: 55vh;
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    content: "Drag products here!";
+}
+.subtotal:empty::before{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 12%;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding:10px;
+    content: "Subtotal: 0.00";
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 93vh;
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+    font-size: medium;
+    color: var(--bt-color);
+    border: 3px;
+}
+textarea{
+    max-width: 173px;
+    max-height: 34px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid var(--bd-color);
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    justify-content: space-between;
+}
+.inactive{
+    display: none;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: calc(100vh - 70px);
+    min-height: 90vh;
+    min-width: 500px;
+    margin: 20px 0px;
+}
+#info-div{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    justify-content: center;
+    align-self: flex-end;
+    cursor: pointer;
+    }
+    .speech-bubble {
+        position: absolute;
+        top: 5%;
+        right: 1%;
+        width: 300px;
+        text-align: justify;
+        background-color: var(--bg2-color);
+        border-radius: .4em;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    
+    .speech-bubble:after {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 65%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-top-color: var(--bg2-color);
+        border-bottom: 0;
+        border-left: 0;
+        margin-left: 55px;
+        margin-bottom: -20px;
+        transform: rotate(180deg);
+    }
+.bloque1{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: 95%;
+    margin: 5px;
+}
+.bloque2{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: 95%;
+    margin:5px;
+
+}
+
+.agregar-lista{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+    
+    
+}
+.lista{
+    width: 100%;
+    height: 64%;
+    max-height: 64%;
+    display: grid;
+    grid-auto-rows: 14rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    border: 1px solid var(--bd-color);
+    overflow: auto;
+    
+    
+}
+.botones-lista{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    height: 18%;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: var(--bt-color);
+    border-radius: 8px;
+    color: var(--bg-color);
+    border: 1px solid var(--bd-color);
+    font-weight: bold;
+}
+button:hover{
+    background-color: var(--bt2-color);
+}
+
+.lista-compra{
+    width: 100%;
+    height: 64%;
+    max-height: 64%;
+    display: grid;
+    grid-auto-rows: 14rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    border: 1px solid var(--bd-color);
+    overflow: auto;
+    
+}
+
+.botones-compra{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    height: 18%;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input-area{
+    border: 1px solid var(--bd-color);
+}
+
+.lista-item{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bd-color);
+    cursor: grab;
+    flex-direction: column;
+    padding: 5px;
+}
+.lista-item:hover{
+    background-color: var(--bg2-color);
+}
+.over{
+    background-color: var(--bg2-color);
+}
+
+.overTrash{
+    background-color: var(--bt-color);
+}
+.trash img{
+    width: 70px;
+    height: 70px;
+}
+
+.bloque3{
+    position: absolute;
+    top: 40px;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--bg-color);
+    width: 40%;
+    height: auto;
+    min-height: 90vh;
+    border: 1px solid var(--bd-color);
+    margin: 20px 0 20px 0;
+}
+.subtotal{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 12%;
+    border: 1px solid var(--bd-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding:10px;
+}
+
+.lista-item a{
+    
+    display: flex;
+    justify-content: flex-end;
+}
+.separador{
+    width: 100%;
+    height: 55%;
+}
+.bill{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+.bill-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+   }
+.bill-header *{
+    padding: 5px;
+}
+.header-feet{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.header-item{
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+}
+.bill-body{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    justify-content: space-between;
+    font-size: 1.5rem;   
+}
+
+.bill-footer{
+    margin-top:20px ;
+    font-size: 2rem;
+}
+.left{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 5px;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding: 5px;
+}
+.total{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.print-button{
+    margin-top: 20px;
+}
+.back-link{
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 55px;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--bd-color);
+    font-weight: bold;
+}
+
+.back-link img{
+    transform: rotate(180deg);
+    padding: 0px 5px;
+}

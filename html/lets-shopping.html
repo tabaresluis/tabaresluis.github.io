@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/lets-shopping.css">
+    <title>Let's Shopping!</title>
+</head>
+<body>
+    <nav class="nav">
+        <h1>Let's Shopping!..</h1>
+        <div id="info-div"> i</div>
+        <div class="speech-bubble inactive">Este proyecto es una lista de compras con algunos productos predeterminados, se puede eliminar productos de la lista, agregar nuevos, arrastrar los productos a otra lista, y estos a su vez se pueden arrastrar a la papelera para eliminarlos, se puede apreciar también el cálculo con dos decimales.
+        Alerta: no tiene diseño adaptativo para dispositivos móviles</div>
+        </div>
+    </nav>
+    <a class ="back-link" href="/"><img src="/src/icons/flechita.svg" alt=""> back</a>
+    <div class="container">
+       <div class="bloque1">
+        <form action="" class="agregar-lista" id="input">
+        <div class="input" >
+        <label>Add a new product</label>
+        <input type="text"  id="name" class="input-area" placeholder="Product name"></textarea>
+        <label>Price</label>
+        <input type="text" id="price" class="input-area" placeholder="0.00"></textarea>
+        </div>
+        <button type="submit">Add</button>
+
+        </form>
+        <ul class="lista" id="lista"></ul>
+        <div>
+            <div>Cashier</div>
+            <div id="cashier">Luis Tabares</div>
+        </div>
+    </div>
+       <div class="bloque2">
+            <ul class="lista-compra" id="lista-compra"></ul>
+            <div class="subtotal"></div>
+            <div class="botones-compra" id="null">
+                <button id="comprar">Buy</button>
+                <div class="trash" id="trash"><img src="/src/img/trash.png" alt=""></div>
+            </div>
+            
+       </div>
+       <div class="bloque3">
+        
+            <div class="bill-header">
+                <h1>Let's Shopping!</h1>
+                <h3>9213 N. Ridgewood Dr.
+                    Colonial Heights, VA 23834</h3>
+                <div class="header-feet">
+                    <div class="header-item" id="date"></div>
+                    <div class="header-item" id="bill-cashier"></div>
+                    <div class="header-item" id="station">station# 2</div>
+                    <div class="header-item" id="id-order"></div>
+                </div>
+            </div>
+            <div class="bill-body">  
+            </div>
+            <h3 class="bill-footer">
+                Thanks You For Shopping
+            </h3>
+            
+            <button class="print-button">Print</button>
+       </div>
+    </div>
+    <script src="/js/lets-shopping.js"></script>
+    </body>
+</html>

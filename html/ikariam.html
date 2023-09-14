@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/ikariam.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Tiempo de viaje</title>
+</head>
+<body>
+    <a class ="back-link" href="/"><img src="/src/icons/flechita.svg" alt=""> back</a>
+    <div class="i" id="info-label">i</div>
+    <div class="card-container">
+    
+    <div class="container hide" id="info-div">
+        <p>Ikariam es un videojuego de estrategia en tiempo real, en el cual existen diferente tipos de embarcaciones con diferentes velocidades, en el juego se conoce el tiempo de duración de un viaje solo desde el puerto de partida donde tengas la flota, hasta el destino. Está aplicación puede calcular el tiempo de viaje desde cualquier ciudad a otra aun sin tener flota en la misma, lo cual es una herramienta si se necesita mover flota a través de varias ciudades. Las ciudades estan distribuídas en el mundo en un mapa con coordenadas "x" y "y"</p>
+    </div>
+   
+    <div class="container">
+        
+            <div class="form">
+                <div class="speed">
+                    <input type="radio" name="boats" id="merchant" class="speed-radio">
+                    <label for="merchant">
+                        <img src="/src/img/mercante.png" alt="">Mercantes
+                    </label>
+                </div>
+                <div class="speed">
+                    <input type="radio" name="boats" id="fast" class="speed-radio">
+                    <label for="fast">
+                        <img src="/src/img/pala.png" alt=""> Flota rapida
+                    </label>
+                </div>
+                <div class="speed">
+                    <input type="radio" name="boats" id="light" class="speed-radio">
+                    <label for="light">
+                        <img src="/src/img/simple.png" alt="">
+                        <img src="/src/img/ballesta.png" alt="">
+                        <img src="/src/img/cata.png" alt="">
+                        <img src="/src/img/llama.png" alt="">
+                        <img src="/src/img/eav.png" alt="">
+                        <img src="/src/img/submarino.png" alt="">Flota ligera
+                    </label>
+                </div>
+                <div class="speed">
+                    <input type="radio" name="boats" id="heavy" class="speed-radio">
+                    <label for="heavy">
+                        <img src="/src/img/mortero.png" alt="">
+                        <img src="/src/img/misil.png" alt="">
+                        <img src="/src/img/mantenimiento.png" alt="">Flota pesada
+                    </label>
+                </div>
+                <div class="speed">
+                    <input type="radio" name="boats" id="porta" class="speed-radio">
+                    <label for="porta">
+                        <img src="/src/img/porta.png" alt="">Portas
+                    </label>
+                </div>
+                <div class="speed poseidon">
+                    <label for=""><img src="/src/img/poseidon.png" alt="">lvl</label>
+                    <label for="lvl1">1</label>
+                    <input type="radio" name="pose" id="lvl1" class="pose">
+                    <label for="lvl2">2</label>
+                    <input type="radio" name="pose" id="lvl2" class="pose">
+                    <label for="lvl3">3</label>
+                    <input type="radio" name="pose" id="lvl3" class="pose">
+                    <label for="lvl4">4</label>
+                    <input type="radio" name="pose" id="lvl4" class="pose">
+                    <label for="lvl5">5</label>
+                    <input type="radio" name="pose" id="lvl5" class="pose">
+                </div>
+            </div>
+            <div class="form">
+            <label for="">Inicio</label>
+            <div class="inputs">
+                <input type="number" id="startX" placeholder="x" min="1" max="99">
+                <input type="number" id="startY" placeholder="y" min="1" max="99">      
+            </div>
+            <label for="">Destino</label>
+            <div class="inputs">
+                <input type="number" id="finishX" placeholder="x" min="1" max="99">
+                <input type="number"id="finishY" placeholder="y" min="1" max="99">
+            </div>
+            <button class="inputs input-button" id="button">OK</button>
+            <div class="result"></div>
+        </div>
+    </div>
+</div>
+   
+    <script src="/js/ikariam.js"></script>
+</body>
+</html>
