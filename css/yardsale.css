@@ -465,9 +465,10 @@ nav{
      }
      .speech-bubble {
         position: absolute;
-        bottom: -46%;
-        right: 14%;
-        width: 200px;
+        bottom: -60%;
+        right: -22%;
+        width: 420px;
+        text-align: justify;
         background-color: var(--light-blue);
         border-radius: .4em;
         padding: 10px;
