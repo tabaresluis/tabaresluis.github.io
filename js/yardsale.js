@@ -395,6 +395,7 @@ function showAll(){
         showallcategories.forEach((item)=>{
             item.classList.remove('inactive')
         })
+        mobileMenu.classList.add('inactive')
     })
 }
 function showCategorie(categorie){
@@ -413,6 +414,7 @@ function showCategorie(categorie){
             })
       
     allCategories.push(categorie)
+    mobileMenu.classList.add('inactive')
                 
 }
 
