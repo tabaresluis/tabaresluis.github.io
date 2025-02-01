@@ -252,6 +252,9 @@ section{
     justify-content: center;
     padding: 5px;
 }
+.capcut img{
+    border-radius: 50%;
+} 
 .div-hab label{
     font-size: var(--md);
 }
