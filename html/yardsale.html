@@ -111,17 +111,17 @@
          
             <form action="" class="form" >
                 <div id="login-form"></div>
-                <label for="email" class="label">Email address</label>
+                <label class="label">Email address</label>
                 <input class="input input-email" type="text" name="" id="login-email" placeholder="email@example.com">
 
-                <label for="password" class="label">Password</label>
+                <label class="label">Password</label>
                 <input class="input input-password" type="password" name="" id="login-password" placeholder="**********">
 
                 <input type="submit" value="Log in" class="primary-button login-button">
                 <button class="secondary-button signup-button">Sign up</button>
-                <label id="skipLogin"><div id="info-div"> i</div><a id="skipLoginA" >skip <img src="/src/icons/flechita.svg" alt=""></a>
+                <div id="skipLogin"><div id="info-div"> i</div><a id="skipLoginA" >skip <img src="/src/icons/flechita.svg" alt=""></a>
                 
-                </label>
+            </div>
             </form>
             <div class="speech-bubble inactive">Este proyecto emula una página de venta de jardín, se puede hacer 'sign up' y los datos se almacenan en el historial local, también se puede avanzar para probar las aplicaciones usando el link 'skip', una vez en la aplicación se puede apreciar distintos artículos, con diferentes categoría, un carro de compras, administración de la cuenta, manejo de errores desde el front, entre otros</div>
         </div>
@@ -131,20 +131,20 @@
             <h1 class="title">My account</h1>
             <div class="form-create"></div>
             <form action="" class="form">
-                    <label for="name" class="label">Name</label>
+                    <label class="label">Name</label>
                     <input class="input input-name" type="text" name="" id="signup-name" placeholder="Name">
     
-                    <label for="email" class="label">Email</label>
+                    <label class="label">Email</label>
                     <input class="input input-email" type="text" name="" id="signup-email" placeholder="asd@example.com">
     
-                    <label for="password" class="label">Password</label>
+                    <label class="label">Password</label>
                     <input class="input input-password" type="password" name="" id="signup-password" placeholder="**********">
-                    <label for="password" class="label">Repeat Password</label>
+                    <label class="label">Repeat Password</label>
                     <input class="input input-password" type="password" name="" id="repeat-password" placeholder="**********">           
                     <input type="submit" value="Create" id="create-account-button" class="primary-button" >
-                    <label id="skipLogin" class="back"><a href="/html/yardsale.html"><img src="/src/icons/flechita.svg" alt="">back</a>
-                
-                    </label>
+                    <div id="skipLogin" class="back">
+                        <a href="/html/yardsale.html"><img src="/src/icons/flechita.svg" alt="">back</a>
+                    </div>
             </form>
         </div>
     </div>
@@ -155,13 +155,13 @@
 
             <form action="" class="form">
                 <div>
-                    <label for="name" class="label">Name</label>
+                    <label class="label">Name</label>
                     <p class="value" id="name-account"></p>
     
-                    <label for="email" class="label">e-mail</label>
+                    <label class="label">e-mail</label>
                     <p class="value" id="email-account"></p>
     
-                    <label for="password" class="label">Password</label>
+                    <label class="label">Password</label>
                     <p class="value" id="pass-account">******</p>
                 </div>
                
@@ -179,12 +179,12 @@
             <div class="form-edit"></div>
             <form action="" class="form">
                 <div id="message-password"></div>
-                <label for="password" class="label">Password</label>
+                <label class="label">Password</label>
                 <input class="input input-password" type="password" name="" id="before-password" placeholder="**********">
 
-                <label for="new-password" class="label">Password</label>
+                <label class="label">Password</label>
                 <input class="input input-password" type="password" name="" id="new-password" placeholder="**********">
-                <label for="new-password" class="label">Repeat password</label>
+                <label class="label">Repeat password</label>
                 <input class="input input-password" type="password" name="" id="repeat-new-password" placeholder="**********">
 
                 <input id="change-pass-button" type="submit" value="Confirm" class="primary-button login-button" >
